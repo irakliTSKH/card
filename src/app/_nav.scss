@@ -1,0 +1,35 @@
+nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 482px;
+    li {
+      a {
+        padding-bottom: 12px;
+        &:hover {
+          border-bottom: 2px solid $blue;
+          color: $blue;
+        }
+        color: rgba($blue, 0.5);
+        font-weight: 700;
+      }
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+  @include screen {
+    font-size: 16px;
+  }
+}
+
+

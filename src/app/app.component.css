@@ -1,0 +1,123 @@
+nav {
+  background-color: red;
+  display: none;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 3vw, 14px);
+  flex: 1;
+}
+.input-div input,
+.input-div select {
+  margin-bottom: 10px;
+  border: 0.5px solid rgb(0, 163, 224);
+  border-radius: 5px;
+  color: grey;
+  background-color: white;
+  height: 40px;
+  max-width: 318px;
+}
+.input-div label {
+  margin-bottom: 5px;
+}
+.input-div button {
+  color: rgb(0, 163, 224);
+  font-weight: 700;
+  border: 0.5px solid rgb(0, 163, 224);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 40px;
+  max-width: 318px;
+}
+@media (width > 720px) {
+  .input-div {
+    margin: 54px 55px;
+  }
+}
+@media (width > 1440px) {
+  .input-div {
+    margin: 94px 95px;
+  }
+}
+
+.time-div {
+  margin-top: 30px;
+  text-wrap: nowrap;
+  flex: 1;
+}
+.time-div h4 {
+  font-weight: 700;
+  text-align: center;
+  font-size: clamp(12px, 4vw, 16px);
+}
+.time-div ul {
+  font-size: clamp(10px, 3vw, 14px);
+  margin-top: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.time-div ul li {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  flex: 1 0 calc(33.33% - 10px);
+}
+.time-div ul li label {
+  display: flex;
+  cursor: pointer;
+}
+.time-div ul li select {
+  width: 80px;
+  height: 22px;
+  border: 0.5px solid rgb(0, 163, 224);
+  border-radius: 5px;
+}
+@media (width > 720px) {
+  .time-div li {
+    background-color: red;
+    display: flex;
+    align-items: center;
+  }
+  .time-div li label {
+    display: flex;
+  }
+  .time-div li select {
+    width: 116px;
+    height: 32px;
+  }
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(65, 66, 65, 0.25);
+}
+main .card {
+  background-color: white;
+  width: 80%;
+  max-width: 1176px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+main .card section {
+  background-color: rgba(0, 163, 224, 0.08);
+  max-width: 1056px;
+  margin: 5%;
+}
+@media (width > 720px) {
+  main .card section {
+    margin: 100px 60px 60px;
+    display: flex;
+  }
+  main .card section .line {
+    display: none;
+    height: 300px;
+    border: 0.5px solid black;
+    margin: 0 50px;
+  }
+}/*# sourceMappingURL=app.component.css.map */
